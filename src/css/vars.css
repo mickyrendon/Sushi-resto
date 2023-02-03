@@ -1,0 +1,13 @@
+/* variables */
+:root{
+    --main-white: #FFFFFE;
+    --main-red: #C41B18;
+    --secondary-red: #E22824;
+    --olive-green: #91962A;
+    --main-black: #030303;
+    --sec-black: #111111;
+    --opacity-black: #030303a1;
+    --disactive-gray: #7B7B7B;
+    --inter:'Inter', 'sans-serif';
+    --inder:'Inder', 'sans-serif'
+}

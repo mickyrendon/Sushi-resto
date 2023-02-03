@@ -1,0 +1,16 @@
+{
+  "name": "okasama2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "import",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
