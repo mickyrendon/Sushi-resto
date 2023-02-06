@@ -22,9 +22,19 @@
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="../src/js/loader/loader.js"></script>
     <title>Okasama Sushi & Japanese food</title>
 </head>
-<body class="h-full bkg-main-black font-inter text-base">
+<body class="h-full bkg-main-black font-inter text-base ov-hidden">
+    <!-- preloader -->
+    <div class="loader-ctr w-screen h-screen fixed top-0 z-30 bkg-main-black ov-hidden animate__animated">
+        <div class="w-full h-full grid place-items-center">
+            <figure class="w-auto h-auto flex content-center">
+                <img src="../src/assets/logo.png" alt="Okasama logo" class="animate-pulse">
+            </figure>
+        </div>
+    </div>
     <!-- lugar en donde se genera dinamicamente el menu mobile con js -->
     <div class="mobile-m"></div>
     <header class="w-full max-h-full">
@@ -36,7 +46,7 @@
                 </figure>
             </button>
             <figure class="w-24 h-full">
-                <img src="../src/assets/logo.png" class="" alt="Okasama logo">
+                <img src="../src/assets/logo.png" alt="Okasama logo">
             </figure>
         </nav>
         <!-- Slider main container -->
@@ -100,9 +110,9 @@
                 <input type="text" placeholder="Nombre"  class="inpt" name="Name" required>
             </label>
             <label for="email">
-                <input type="email" placeholder="dirección de correo"  class="inpt" name="email" required>
+                <input type="email" placeholder="dirección de correo"  class="inpt " name="email" required >
             </label>
-            <textarea rows="5" cols="1" class=" ph inpt resize-y" name="Content" placeholder="Deje su mensaje" required></textarea>
+            <textarea rows="5" cols="1" class=" ph inpt resize-y " name="Content" placeholder="Deje su mensaje" required></textarea>
 
             <label for="submit" class="flex justify-center sm:justify-end">
                 <input type="submit" class="btn btn-f bg-[var(--main-red)]" value="Envíar">
