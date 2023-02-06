@@ -1,6 +1,6 @@
 import { deleteLoader } from '../src/js/loader/loader.js'
-import { cardsIterator } from '../src/js/gallery/createCard.js'
-import { mediaQ } from '../src/js/menu/mediaqueries.js'
+import { cardsIterator } from '../src/js/gallery/cards/createCard.js'
+import { mediaQ } from '../src/js/menu/desktop/mediaqueries.js'
 
 
 globalThis.onload = () => {
@@ -12,7 +12,7 @@ globalThis.onload = () => {
     const mobileMenuBtn = document.querySelector('.menu-mobile')
 
     mobileMenuBtn.addEventListener('click', async () => {
-        const { mobileMenu } = await import('../src/js/menu/mobileMenu.js')
+        const { mobileMenu } = await import('../src/js/menu/mobile/mobileMenu.js')
         return mobileMenu()
     })
 
