@@ -22,7 +22,7 @@ export const newNode = () => {
 
     const figure = document.createElement('figure')
     const img = document.createElement('img')   
-          img.src = '../src/assets/icon/back.png'
+          img.src = 'assets/images/icon/back.png'
           img.setAttribute('alt', 'back')
 
     // list ctr

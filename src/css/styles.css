@@ -1,5 +1,5 @@
 *{
-    font-family: var(--inter);
+    font-family: var(--inder);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,6 +39,7 @@
     background-color: var(--secondary-red);
     border-radius: 0.25rem;
     text-align: center;
+    font-family: var(--inter);
     font-weight:600;
     color: var(--main-white);
     box-shadow:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -47,14 +48,15 @@
 /* form btn */
 form > [type='submit']{
     padding: 0.5rem 1rem;
-    max-width: auto;
+    /* max-width: auto; */
 }
 /*titles */
 .subt{
-    margin-top:2,25rem ;
+    margin-top:2.25rem ;
     color: var(--main-white);  
     font-size: 1.25rem; 
     line-height: 1.75rem; ;
+    font-family: var(--inter);
     font-weight: 600;
 }
 

@@ -42,6 +42,8 @@ export const parentNodes = (ev) => {
       const nodeModal = document.querySelector('.gallery-modal')
             nodeModal.classList.add('modal', 'top', 'ov-hidden')
             nodeModal.classList.remove('hidden')
+            // atacando el style, porque el flex del modal no funciona en webpack
+            nodeModal.style.display = 'flex'
 
       const swiperWraper = document.createElement('div')
             swiperWraper.classList.add('swiper-wrapper', 'animate__animated', 'animate__slideInDown', 'supa-fast')
@@ -63,7 +65,7 @@ export const parentNodes = (ev) => {
       const figure = document.createElement('figure')
 
       const img = document.createElement('img')   
-            img.src = '../src/assets/icon/back.png'
+            img.src = 'assets/images/icon/back.png'
             img.setAttribute('alt', 'back')
 
       // imgs
