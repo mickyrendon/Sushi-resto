@@ -13,7 +13,7 @@ const createModal = (element) => {
             swiper.classList.add('node-pic', 'swiper-slide','modal-card')
             swiper.style.backgroundImage = element.target.style.backgroundImage
       const descCtr = document.createElement('div')        
-            descCtr.classList.add('card-description', 'h-32', 'pl-7', 'opacity-100')
+            descCtr.classList.add('modal-description', 'h-1/6', 'pl-7', 'opacity-100', 'sm:pl-8')
       const h3 = document.createElement('h3')
             h3.classList = 'dish name'
             h3.innerText = element.target.childNodes[0].childNodes[0].innerText
