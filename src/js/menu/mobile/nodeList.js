@@ -28,6 +28,7 @@ const listNode = () => {
             a.href = '#social-ntws'
         } 
         li.classList.add('li-under', 'li-h')
+        a.classList.add('inline-flex', 'w-full')
         li.append(a)
         // adding backbtn event
         a.addEventListener('click', async () => {
