@@ -6,7 +6,6 @@ import './css/vars.css'
 import './css/styles.css'
 import '../node_modules/animate.css/animate.min.css'
 
-globalThis.onload = () => {
     swiper
     cardsIterator
     // desktop menu
@@ -26,7 +25,8 @@ globalThis.onload = () => {
         const { downloadPdf } = await import('../src/js/menuDownload/downloadBtn.js')
         return downloadPdf(ev)
     })
+    
 
-    return deleteLoader()
-}
-
+globalThis.addEventListener('load', () => {
+    return deleteLoader() 
+})

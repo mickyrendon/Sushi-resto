@@ -23,16 +23,9 @@ export const menu = [
             src : 'assets/images/gallery/tinyfied/03.jpg',
         }
     },
+    
     {
         title: 'Plato 4',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : 'assets/images/gallery/tinyfied/04.jpg',
-        }
-    },
-    {
-        title: 'Plato 5',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -40,7 +33,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 6',
+        title: 'Plato 5',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -48,7 +41,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 7',
+        title: 'Plato 6',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -56,7 +49,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 8',
+        title: 'Plato 7',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -64,7 +57,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 9',
+        title: 'Plato 8',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -72,7 +65,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 10',
+        title: 'Plato 9',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -80,7 +73,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 11',
+        title: 'Plato 10',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -88,7 +81,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 12',
+        title: 'Plato 11',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -96,7 +89,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 13',
+        title: 'Plato 12',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -104,7 +97,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 14',
+        title: 'Plato 13',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -112,7 +105,7 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 15',
+        title: 'Plato 14',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
@@ -120,19 +113,19 @@ export const menu = [
         }
     },
     {
-        title: 'Plato 16',
+        title: 'Plato 15',
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
             src : 'assets/images/gallery/tinyfied/16.jpg',
         }
-    },
-    {
-        title: 'Plato 17',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : 'assets/images/gallery/tinyfied/17.jpg',
-        }
     }
+    // {
+    //     title: 'Plato 16',
+    //     description: 'lorem ipsum lorem ipsum',
+    //     price: '$00.00',
+    //     image: {
+    //         src : 'assets/images/gallery/tinyfied/17.jpg',
+    //     }
+    // }
 ]

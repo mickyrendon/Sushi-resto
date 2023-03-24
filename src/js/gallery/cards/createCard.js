@@ -15,6 +15,7 @@ const createCard = (menuId) => {
           descCtr.classList = 'card-description'
     const h3 = document.createElement('h3')
           h3.classList = 'dish name'
+          h3.setAttribute('title', 'dish-name')
           h3.innerText = `${indexed[menuId].title}`
     const p = document.createElement('p')
           p.classList = 'description'
@@ -22,6 +23,7 @@ const createCard = (menuId) => {
           p.classList.add('italic', 'hidden')
     const span = document.createElement('span')
           span.classList = 'price text-xs'
+          span.setAttribute('title', 'price')
           span.innerText = `${indexed[menuId].price}`
           
           cardCtr.append(descCtr)
@@ -45,9 +47,10 @@ export const cardsIterator =  cardRender(addImg)
 
 // agrega el evento click al elemento padre de las cards, delegacion de eventos
 nodeCard.addEventListener('click', async (ev) => {
-      if(ev.target.title === 'menu-card'){
+      // console.log(ev.target);
+      const cardName = ev.target.title
+      if(cardName === 'menu-card'){
             const { galleryPicsCreator } = await import('../modal/modal.js')
-            
             // obtengo el elemento clickeado
             return galleryPicsCreator(ev)
       }

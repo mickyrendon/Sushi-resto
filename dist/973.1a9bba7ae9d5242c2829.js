@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkokasama2=self.webpackChunkokasama2||[]).push([[973],{973:(a,s,o)=>{o.r(s),o.d(s,{downloadPdf:()=>e});location.href="http://www.okasamasushi.com/docs/carta_web_okasamasushi.pdf";var e=function(a){a.preventDefault()}}}]);

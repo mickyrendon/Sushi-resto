@@ -1,4 +1,5 @@
-export const deleteLoader = () => {
+export const 
+deleteLoader = () => {
     const body = document.body
     const loaderCtr = document.querySelector('.loader-ctr')
     
