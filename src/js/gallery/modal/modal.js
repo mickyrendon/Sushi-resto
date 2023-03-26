@@ -3,35 +3,69 @@ import { keys } from '../cardsContentReduced.js';
 
 // sliders
 const createModal = (element) => {
+      
+      const tag =  element.target.title
 
-      const arrayIndex = element.target.getAttribute('data-id')
-      console.log(`${element.target.id} id del array: ${arrayIndex}`);
-      const swiper = document.createElement('div')
-            swiper.setAttribute('title', 'modal-pic')
-            swiper.setAttribute('data-id', arrayIndex)
-            swiper.id = `modal_${element.target.id}`
-            swiper.classList.add('node-pic', 'swiper-slide','modal-card')
-            swiper.style.backgroundImage = element.target.style.backgroundImage
-      const descCtr = document.createElement('div')        
-            descCtr.classList.add('modal-description', 'h-1/6', 'pl-7', 'opacity-100', 'sm:pl-8')
-      const h3 = document.createElement('h3')
-            h3.classList = 'dish name'
-            h3.innerText = element.target.childNodes[0].childNodes[0].innerText
-      const p = document.createElement('p')
-            p.classList = 'description'
-            p.innerText = element.target.childNodes[0].childNodes[1].innerText
-            p.classList.add('italic')
-      const span = document.createElement('span')
-            span.classList = 'price text-xs'
-            span.innerText = element.target.childNodes[0].childNodes[2].innerText
+      if(tag === 'card-description' || tag === 'dish-name' || tag === 'price'){
+           const arrayIndex = element.target.offsetParent.getAttribute('data-id')
+            const swiper = document.createElement('div')
+                  swiper.setAttribute('title', 'modal-pic')
+                  swiper.setAttribute('data-id', arrayIndex)
+                  swiper.id = `modal_${element.target.offsetParent.id}`
+                  swiper.classList.add('node-pic', 'swiper-slide','modal-card')
+                  swiper.style.backgroundImage = element.target.offsetParent.style.backgroundImage
+            const descCtr = document.createElement('div')        
+                  descCtr.classList.add('modal-description', 'h-1/6', 'pl-7', 'opacity-100', 'sm:pl-8')
+            const h3 = document.createElement('h3')
+                  h3.classList = 'dish name'
+                  h3.innerText = element.target.offsetParent.childNodes[0].childNodes[0].innerText
+            const p = document.createElement('p')
+                  p.classList = 'description'
+                  p.innerText = element.target.offsetParent.childNodes[0].childNodes[1].innerText
+                  p.classList.add('italic')
+            const span = document.createElement('span')
+                  span.classList = 'price text-xs'
+                  span.innerText = element.target.offsetParent.childNodes[0].childNodes[2].innerText
+                  
+                  
+                  swiper.append(descCtr)
+                  descCtr.append(h3)
+                  descCtr.append(p)
+                  descCtr.append(span)
+                  
+                  return swiper
+    
+      }else{
 
-
-            swiper.append(descCtr)
-            descCtr.append(h3)
-            descCtr.append(p)
-            descCtr.append(span)
-
-            return swiper
+            const arrayIndex = element.target.getAttribute('data-id')
+                  console.log(`${element.target.id} id del array: ${arrayIndex}`)
+            const swiper = document.createElement('div')
+                  swiper.setAttribute('title', 'modal-pic')
+                  swiper.setAttribute('data-id', arrayIndex)
+                  swiper.id = `modal_${element.target.id}`
+                  swiper.classList.add('node-pic', 'swiper-slide','modal-card')
+                  swiper.style.backgroundImage = element.target.style.backgroundImage
+            const descCtr = document.createElement('div')        
+                  descCtr.classList.add('modal-description', 'h-1/6', 'pl-7', 'opacity-100', 'sm:pl-8')
+            const h3 = document.createElement('h3')
+                  h3.classList = 'dish name'
+                  h3.innerText = element.target.childNodes[0].childNodes[0].innerText
+            const p = document.createElement('p')
+                  p.classList = 'description'
+                  p.innerText = element.target.childNodes[0].childNodes[1].innerText
+                  p.classList.add('italic')
+            const span = document.createElement('span')
+                  span.classList = 'price text-xs'
+                  span.innerText = element.target.childNodes[0].childNodes[2].innerText
+                  
+                  
+                  swiper.append(descCtr)
+                  descCtr.append(h3)
+                  descCtr.append(p)
+                  descCtr.append(span)
+                  
+                  return swiper
+      }
 }
 
 // agrega las imgs al nodo

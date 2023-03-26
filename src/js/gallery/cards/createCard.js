@@ -11,8 +11,12 @@ const createCard = (menuId) => {
           cardCtr.id = `card_${idx++}`
           cardCtr.classList = `${indexed[menuId].title} card bg-cover bg-center`
           cardCtr.style.backgroundImage = `url(${indexed[menuId].image.src})`
-    const descCtr = document.createElement('div')        
+    const descCtr = document.createElement('div')     
+      //  copiando el id de cardCtr para que así todos los elementos hijos de "descripción" e inclusive, tengan el mismo id y no halla problema en el script "modal"
+      //     descCtr.id = cardCtr.id
           descCtr.classList = 'card-description'
+          descCtr.setAttribute('title', 'card-description')
+      //     descCtr.setAttribute('data-id', menuId)
     const h3 = document.createElement('h3')
           h3.classList = 'dish name'
           h3.setAttribute('title', 'dish-name')
@@ -45,11 +49,15 @@ const addImg = (id) => {
 
 export const cardsIterator =  cardRender(addImg)
 
+
+
+
 // agrega el evento click al elemento padre de las cards, delegacion de eventos
 nodeCard.addEventListener('click', async (ev) => {
       // console.log(ev.target);
       const cardName = ev.target.title
-      if(cardName === 'menu-card'){
+
+      if(cardName === 'menu-card' || cardName === 'card-description' || cardName === 'dish-name' || cardName === 'price'){
             const { galleryPicsCreator } = await import('../modal/modal.js')
             // obtengo el elemento clickeado
             return galleryPicsCreator(ev)
