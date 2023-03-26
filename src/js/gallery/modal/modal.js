@@ -66,6 +66,7 @@ export const parentNodes = (ev) => {
 
       const img = document.createElement('img')   
             img.src = 'assets/images/icon/back.png'
+            img.classList.add('w-8', 'md:w-10')
             img.setAttribute('alt', 'back')
 
       // imgs
