@@ -18,14 +18,6 @@ import '../node_modules/animate.css/animate.min.css'
         return mobileMenu()
     })
 
-    // download menu
-    const downloadMenu = document.querySelector('.download-menu')
-
-    downloadMenu.addEventListener('click', async (ev) => {
-        const { downloadPdf } = await import('../src/js/menuDownload/downloadBtn.js')
-        return downloadPdf(ev)
-    })
-    
 
 globalThis.addEventListener('load', () => {
     return deleteLoader() 
