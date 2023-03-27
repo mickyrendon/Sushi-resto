@@ -5,10 +5,9 @@ const node = () => {
             ctr.classList = 'desk-menu w-1/2 flex justify-between items-center txt-m-white text-xs lg:text-sm lg:w-2/5'
             ctr.id = 'menu-desk-ctr'
       // links
-      const orderBtn = document.createElement('a')
-            orderBtn.classList = 'btn md:w-20'
+      const orderBtn = document.createElement('button')
+            orderBtn.classList = 'deliver-btn btn md:w-20'
             orderBtn.innerText = content.value5
-            orderBtn.href = 'https://www.pedidosya.cl/'
       const menu  = document.createElement('a')
             menu.classList = 'li-h'
             menu.innerHTML = content.value1

@@ -18,8 +18,17 @@
 .bkg-main-white{
     background-color: var(--main-white);
 }
+.txt-main-red{
+    color: var(--secondary-red);
+}
+.txt-main-black{
+    color: var(--main-black);
+}
 .txt-m-white{
     color: var(--main-white);
+}
+.txt-disactive-gray{
+    color: var(--disactive-gray)
 }
 /* especials */
 .ov-hidden{

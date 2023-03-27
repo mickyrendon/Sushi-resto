@@ -17,6 +17,8 @@
     <title>Okasama Sushi & Japanese food</title>
 </head>
 <body class="h-full bkg-main-black font-inter text-base ov-hidden">
+    <!-- deliver modal -->
+    <div class="deliver-modal w-screen h-screen justify-center items-center fixed top-0 z-30 bkg-opacity-black ov-hidden animate__animated hidden"></div>
     <!-- preloader -->
     <div class="loader-ctr w-screen h-screen fixed top-0 z-30 bkg-main-black ov-hidden animate__animated">
         <div class="w-full h-full grid place-items-center">
@@ -83,7 +85,7 @@
   
     </header>
     <main id="menu" class="py-7 px-4 h-auto flex flex-col gap-6 justify-center items-center bkg-main-white md:pt-24 md:flex-col-reverse">
-        <a href="https://www.pedidosya.cl/" class="btn w-28 min-w-max my-4 md:my-8">Pedir</a>
+        <button class="deliver-btn btn w-28 min-w-max my-4 md:my-8">Pedir</button>
         <!-- cards container -->
         <div class="gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8 items-center">
         </div>
