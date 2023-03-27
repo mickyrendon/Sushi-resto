@@ -18,6 +18,9 @@
 .bkg-main-white{
     background-color: var(--main-white);
 }
+.bkg-opacity-black{
+    background-color: var(--opacity-black);
+}
 .txt-main-red{
     color: var(--secondary-red);
 }
@@ -56,6 +59,11 @@
     font-weight:600;
     color: var(--main-white);
     box-shadow:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* modal radiobtn */
+.call-btn::after{
+    content: 'Llamar';
 }
 
 /* form btn */
@@ -259,6 +267,9 @@ input::placeholder, textarea::placeholder {
     }
     .opacity-mid:hover{
         opacity: 1;
+    }
+    .call-btn::after{
+        content: 'ver numero';
     }
 }
 @media (min-width: 1024px) {

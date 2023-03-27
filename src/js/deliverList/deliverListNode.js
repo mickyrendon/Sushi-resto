@@ -5,6 +5,17 @@ import { indexed } from "./numberListReduced.js"
 const deliverModal = document.querySelector('.deliver-modal')
 const fieldset =  document.createElement('fieldset')
 
+deliverModal.addEventListener('click', async (ev) => {
+    const title = ev.target.title
+    if(title === 'modal' || title === 'cancel'){
+        deliverModal.classList.remove('flex')
+        deliverModal.classList.add('hidden')
+        const { close } = await import('./cleanNode.js')
+        return close()
+    }
+})
+
+
 // let idx = 1
 const numbersListNode = (idItem) => {
 
@@ -27,7 +38,6 @@ const addItem = (id) => {
    
     deliverModal.append(fieldset)
     fieldset.append(newItem)
-    
     return deliverModal
 }   
 
@@ -43,13 +53,15 @@ export const deliverList = (e) => {
           legend.classList.add('text-xl', 'txt-main-black')
           legend.innerHTML = 'Elige la sucursal más cercana'
     const div = document.createElement('div')
-          div.classList.add('flex', 'justify-end', 'gap-2')
+          div.classList.add('mt-12', 'flex', 'justify-end', 'gap-2')
     const callBtn = document.createElement('button')
-          callBtn.innerHTML = 'Llamar'
-          callBtn.classList.add('txt-m-white', 'btn', 'w-28', 'min-w-max', 'my-4','md:my-8')
+    // btn innerHTML is setting en styles.css, because mediaquery
+        //   callBtn.innerHTML = 'Llamar'
+          callBtn.classList.add('call-btn', 'txt-m-white', 'btn', 'w-28', 'min-w-max')
     const cancelBtn = document.createElement('button')
+          cancelBtn.setAttribute('title', 'cancel')
           cancelBtn.innerHTML = 'Cancelar'
-          cancelBtn.classList.add('btn', 'w-28', 'min-w-max', 'my-4','md:my-8', 'opacity-70')
+          cancelBtn.classList.add('btn', 'w-28', 'min-w-max',  'opacity-70')
           
     fieldset.append(divLegend)
     divLegend.append(legend)
@@ -57,5 +69,4 @@ export const deliverList = (e) => {
     fieldset.append(div)
     div.append(cancelBtn, callBtn)
 
-    e.preventDefault()
 }

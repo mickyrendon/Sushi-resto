@@ -23,7 +23,9 @@ const deliverBtn = document.querySelector('.deliver-btn')
 
 deliverBtn.addEventListener('click', async (e) => {
     const { deliverList } = await import('./js/deliverList/deliverListNode.js')
-    return deliverList(e)
+    e.preventDefault()
+
+    return deliverList()
 })
 
 
