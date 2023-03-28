@@ -21,9 +21,9 @@ mobileMenuBtn.addEventListener('click', async () => {
 
 const deliverBtn = document.querySelector('.deliver-btn')
 
-deliverBtn.addEventListener('click', async (e) => {
+deliverBtn.addEventListener('click', async () => {
     const { deliverList } = await import('./js/deliverList/deliverListNode.js')
-    e.preventDefault()
+    // e.preventDefault()
 
     return deliverList()
 })
