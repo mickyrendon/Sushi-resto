@@ -1,5 +1,21 @@
 import { indexed } from './numberListReduced.js'
 
+// clipboard
+const copyNumber = async(tel) => {
+    try {
+        console.log(tel)
+        const text = await navigator.clipboard.writeText(tel)
+        console.log('Texto del portapapeles:', text)
+      } catch (err) {
+        console.error('Error al leer del portapapeles:', err)
+      }
+      
+}
+// const cleanNode = () => {
+//     const fieldset = document.querySelector('fieldset')
+//     return fieldset.remove()
+// }
+// //////////////////////
 export const radioBtn = () => {
     const inputRadio = document.querySelectorAll('input[type="radio"]')
     // to get all radiobtns
@@ -15,16 +31,30 @@ export const radioBtn = () => {
 export const checked = () => {
     const inputRadio = document.querySelectorAll('input[type="radio"]')
     const element = [...inputRadio]
-    element.forEach(item => { 
+    // const size = globalThis.matchMedia("(min-width:768px)")
 
-        if(item.checked === true){
+    // mobile menu 
+    element.forEach(item => { 
+        
+        if(item.checked){// === true && size.matches
             const id = item.dataset.id
+            // FIXME, la constante se vuelve indefinida despues de eliminar mas de una vez el fieldset con el btn cancelar o click en el modal
             const tel = indexed[id-1].telefono
             console.log(tel)
-            return tel
+            
+            // cleanNode()
+            // close()
+            // copiedNode()
+            return copyNumber(tel)
         }
     })
 }
+
+
+
+
+
+
 
 
 // TODO

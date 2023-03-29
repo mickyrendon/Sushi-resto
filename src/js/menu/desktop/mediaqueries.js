@@ -7,7 +7,7 @@ export const mediaQ = () => {
     if(size.matches){
         // const btn =  document.querySelector('.call-btn')
         // btn.innerHTML = 'Ver numero'
-        menuDesktop()
+        return menuDesktop()
     }    
 }
 

@@ -8,13 +8,10 @@ const fieldset =  document.createElement('fieldset')
 
 //modal click event to hidde itself
 deliverModal.addEventListener('click', async (ev) => {
-    const title = ev.target.title
-    if(title === 'modal' || title === 'cancel'){
-        deliverModal.classList.remove('flex')
-        deliverModal.classList.add('hidden')
+   
         const { close } = await import('./cleanNode.js')
-        return close()
-    }
+        return close(ev)
+    // }
 })
 
 // creation of label & sons
@@ -50,11 +47,13 @@ const addItem = (id) => {
 
 //click event function of deliver btn
 export const deliverList = () => {
+    console.log('este codigo se muestra una sola vez');
     // showing deliver modal
     deliverModal.classList.remove('hidden')
     deliverModal.classList.add('flex')
     // setting fieldset styles
     fieldset.classList.add('py-6','px-6', 'w-auto', 'h-auto', 'flex', 'flex-col', 'gap-4', 'bkg-main-white','text-disactive-gray', 'rounded-md')
+    fieldset.classList.remove('hidden')
     const divLegend = document.createElement('div')
           divLegend.classList.add('mb-6')
     const legend =  document.createElement('legend')
@@ -65,19 +64,20 @@ export const deliverList = () => {
     const div = document.createElement('div')
           div.classList.add('mt-12', 'flex', 'justify-end', 'gap-2')
     const callBtn = document.createElement('button')
+          callBtn.setAttribute('name', 'call-btn')
     // btn innerHTML is setting en styles.css, because mediaquery
         //   callBtn.innerHTML = 'Llamar'
           callBtn.classList.add('call-btn', 'txt-m-white', 'btn', 'w-28', 'min-w-max')
     const cancelBtn = document.createElement('button')
-          cancelBtn.setAttribute('title', 'cancel')
+          cancelBtn.setAttribute('name', 'cancel')
           cancelBtn.innerHTML = 'Cancelar'
           cancelBtn.classList.add('btn', 'w-28', 'min-w-max',  'opacity-70')
           
     fieldset.append(divLegend)
     divLegend.append(legend)
     // setting 'addItem' as parameter of 'numberlistrender' to iterate it
-    numberListRender(addItem)
     // fieldset.append(divLabel)
+    numberListRender(addItem)
     fieldset.append(div)
     div.append(cancelBtn, callBtn)
 
