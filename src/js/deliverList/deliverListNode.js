@@ -15,9 +15,8 @@ deliverModal.addEventListener('click', async (ev) => {
 })
 
 // creation of label & sons
-let idx = 1
 const numbersListNode = (idItem) => {
-    
+    console.log(`data id del item ${idItem}`)
     const divLabel =  document.createElement('div')
           divLabel.classList.add('flex', 'flex-col')
     const label =  document.createElement('label')
@@ -27,7 +26,7 @@ const numbersListNode = (idItem) => {
           input.type = 'radio'
           input.name = 'items'
           input.value = `${indexed[idItem].sucursal}`
-          input.setAttribute(`data-id`, `${idx++}`)
+          input.setAttribute(`data-id`, `${idItem}`)
     const span  =  document.createElement('span')
           span.classList.add('pl-8','txt-disactive-gray', 'text-sm', 'place-self-stretch')
           span.innerHTML = `${indexed[idItem].telefono}`
@@ -47,7 +46,6 @@ const addItem = (id) => {
 
 //click event function of deliver btn
 export const deliverList = () => {
-    console.log('este codigo se muestra una sola vez');
     // showing deliver modal
     deliverModal.classList.remove('hidden')
     deliverModal.classList.add('flex')
@@ -63,7 +61,8 @@ export const deliverList = () => {
 
     const div = document.createElement('div')
           div.classList.add('mt-12', 'flex', 'justify-end', 'gap-2')
-    const callBtn = document.createElement('button')
+    const callBtn = document.createElement('a')
+      // TODO, obtener el telefono del valor del radiobtn checkeado y ponerlo como href
           callBtn.setAttribute('name', 'call-btn')
     // btn innerHTML is setting en styles.css, because mediaquery
         //   callBtn.innerHTML = 'Llamar'
@@ -81,12 +80,17 @@ export const deliverList = () => {
     fieldset.append(div)
     div.append(cancelBtn, callBtn)
 
-    radioBtn()
+//     const inputRadio = document.querySelectorAll('input[type="radio"]')
+//     console.log(inputRadio)
 
+    
     callBtn.addEventListener('click', async(e) => {
-        e.preventDefault()
+      //   e.preventDefault()
         const { checked } = await import('./radioBtn.js')
-        return checked()
+        checked(e)
     })
+    // callBtn.removeEventListener('click', checked, true)e
+
+    radioBtn()
 }
 

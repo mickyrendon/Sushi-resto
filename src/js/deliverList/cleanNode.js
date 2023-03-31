@@ -20,10 +20,10 @@ export const close = (ev) => {
             return cleaner(alert), targetM()
         }
 
-        return cleaner(fieldset), targetM()
-    }else if(name === 'call-btn'){
-        return targetC(), cleaner(fieldset)
-    }
+        return cleaner(fieldset), targetM()}
+    // }else if(name === 'call-btn'){
+    //     return targetC(), cleaner(fieldset)
+    // }
 }
 
 function copiedNode () {

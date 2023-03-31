@@ -1,14 +1,17 @@
 import { indexed } from './numberListReduced.js'
 
+// const inputRadio = document.querySelectorAll('input[type="radio"]')
+
+
 // clipboard
 const copyNumber = async(tel) => {
     try {
-        console.log(tel)
-        const text = await navigator.clipboard.writeText(tel)
-        console.log('Texto del portapapeles:', text)
+        await navigator.clipboard.writeText(tel)
+        console.log(`Texto del portapapeles`)
       } catch (err) {
         console.error('Error al leer del portapapeles:', err)
       }
+
       
 }
 // const cleanNode = () => {
@@ -17,6 +20,8 @@ const copyNumber = async(tel) => {
 // }
 // //////////////////////
 export const radioBtn = () => {
+    // console.log(inputRadio)
+
     const inputRadio = document.querySelectorAll('input[type="radio"]')
     // to get all radiobtns
     const radioArray = [...inputRadio]
@@ -28,26 +33,31 @@ export const radioBtn = () => {
 }
   
 // recorrer la lista y obtener el elemento checkeado, el evento se debe escuchar siempre que el form este abierto
-export const checked = () => {
+export const checked = (e) => {
+
+    e.preventDefault()
     const inputRadio = document.querySelectorAll('input[type="radio"]')
+
+    // guardo el nodo en un array
     const element = [...inputRadio]
     // const size = globalThis.matchMedia("(min-width:768px)")
-
     // mobile menu 
-    element.forEach(item => { 
-        
-        if(item.checked){// === true && size.matches
-            const id = item.dataset.id
-            // FIXME, la constante se vuelve indefinida despues de eliminar mas de una vez el fieldset con el btn cancelar o click en el modal
-            const tel = indexed[id-1].telefono
-            console.log(tel)
-            
-            // cleanNode()
-            // close()
-            // copiedNode()
-            return copyNumber(tel)
-        }
-    })
+    const found = element.find(item => item.checked)
+    console.log(found)
+    const id = found.dataset.id
+    console.log(id);
+    const tel = indexed[id].telefono
+    console.log(tel);
+    // const callBtn = document.querySelector('.call-btn')
+
+    e.target.setAttribute('href', `tel:${tel}`)
+
+    // e.target.setAttribute(`href`, `tel:${tel}`)
+
+    
+
+    // copyNumber(tel)
+    // return inputRadio
 }
 
 

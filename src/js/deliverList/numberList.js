@@ -5,18 +5,18 @@ export const list = [
     },
     {
         sucursal: `La herradura, Coquimbo`,
-        telefono: `51 2263505`
+        telefono: `512263505`
     },
     {
         sucursal: `Av del mar, La Serena`,
-        telefono: `51 2757361`
+        telefono: `512757361`
     },
     {
         sucursal: `Santiago Baltra, La Serena`,
-        telefono: `51 2219176`
+        telefono: `512219176`
     },
     {
         sucursal: `O'Higgins, Copiapó`,
-        telefono: `52 2239253`
+        telefono: `522239253`
     }
 ]
