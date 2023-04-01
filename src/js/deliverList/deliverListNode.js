@@ -26,7 +26,6 @@ const numbersListNode = (idItem) => {
           input.type = 'radio'
           input.name = 'items'
           input.value = `${indexed[idItem].sucursal}`
-      //     input.classList.add('appearance-none','rounded-full', 'border-2', 'border-solid' )
           input.setAttribute(`data-id`, `${idItem}`)
     const span  =  document.createElement('span')
           span.classList.add('pl-8','txt-disactive-gray', 'text-sm', 'place-self-stretch')
@@ -59,12 +58,10 @@ export const deliverList = () => {
     const legend =  document.createElement('legend')
           legend.classList.add('text-xl', 'txt-main-black')
           legend.innerHTML = 'Elige la sucursal más cercana'
-    // const divLabel = document.createElement('div')
 
     const div = document.createElement('div')
           div.classList.add('mt-12', 'flex', 'justify-end', 'gap-2')
     const callBtn = document.createElement('a')
-      // TODO, obtener el telefono del valor del radiobtn checkeado y ponerlo como href
           callBtn.setAttribute('name', 'call-btn')
           callBtn.innerHTML = 'Llamar'
           callBtn.classList.add('call-btn', 'txt-m-white', 'btn', 'w-28', 'min-w-max')
@@ -91,7 +88,7 @@ export const deliverList = () => {
     const item = check
     console.log(item)
     callBtn.setAttribute(`href`, `tel:${item}`)
-
+// listening change event on inputs radios to get tel value
     element.forEach(item => item.addEventListener('change', (e) =>{
       const id = e.target.dataset.id
       // console.log(id)

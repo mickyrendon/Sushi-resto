@@ -19,15 +19,31 @@ mobileMenuBtn.addEventListener('click', async () => {
 })
 
 
-const deliverBtn = [document.querySelector('.deliver-btn'),document.querySelector('.deliver-btn-main') ]
 
-deliverBtn.forEach(btn => btn.addEventListener('click', async () => {
+const deliverBtn = document.querySelector('body')
+deliverBtn.addEventListener('click', async (e) => {
     const { deliverList } = await import('./js/deliverList/deliverListNode.js')
     // e.preventDefault()
-
-    return deliverList()
+    if(e.target.title === 'deliver-btn'){
+        console.log('deliver btn main');
+        return deliverList()
+    }else if(e.target.title === 'deliver-btn-nav'){
+        console.log('deliver btn nav');
+        return deliverList()
+    }
+    
 })
-)
+
+
+
+// const deliverBtn = [document.querySelector('.deliver-btn'),document.querySelector('.deliver-btn-main') ]
+// deliverBtn.forEach(btn => btn.addEventListener('click', async () => {
+//     const { deliverList } = await import('./js/deliverList/deliverListNode.js')
+//     // e.preventDefault()
+
+//     return deliverList()
+// })
+// )
 
 globalThis.addEventListener('load', () => {
     return deleteLoader() 

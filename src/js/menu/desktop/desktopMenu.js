@@ -7,6 +7,7 @@ const node = () => {
       // links
       const orderBtn = document.createElement('button')
             orderBtn.classList = 'deliver-btn btn md:w-20'
+            orderBtn.setAttribute('title', 'deliver-btn-nav')
             orderBtn.innerText = content.value5
       const menu  = document.createElement('a')
             menu.classList = 'li-h'
