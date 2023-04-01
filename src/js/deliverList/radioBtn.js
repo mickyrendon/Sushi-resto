@@ -33,31 +33,18 @@ export const radioBtn = () => {
 }
   
 // recorrer la lista y obtener el elemento checkeado, el evento se debe escuchar siempre que el form este abierto
-export const checked = (e) => {
+export const checked = () => {
 
-    e.preventDefault()
+    // e.preventDefault()
     const inputRadio = document.querySelectorAll('input[type="radio"]')
 
     // guardo el nodo en un array
     const element = [...inputRadio]
-    // const size = globalThis.matchMedia("(min-width:768px)")
-    // mobile menu 
     const found = element.find(item => item.checked)
-    console.log(found)
-    const id = found.dataset.id
-    console.log(id);
-    const tel = indexed[id].telefono
-    console.log(tel);
-    // const callBtn = document.querySelector('.call-btn')
-
-    e.target.setAttribute('href', `tel:${tel}`)
-
-    // e.target.setAttribute(`href`, `tel:${tel}`)
-
     
-
-    // copyNumber(tel)
-    // return inputRadio
+    const id = found.dataset.id
+    const tel = indexed[id].telefono
+    return tel
 }
 
 

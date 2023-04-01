@@ -1,6 +1,6 @@
 import { numberListRender } from "./numberlistRender.js"
 import { indexed } from "./numberListReduced.js"
-import { radioBtn } from "./radioBtn.js"
+import { checked, radioBtn } from "./radioBtn.js"
 
 // modal node & firstChild
 const deliverModal = document.querySelector('.deliver-modal')
@@ -26,6 +26,7 @@ const numbersListNode = (idItem) => {
           input.type = 'radio'
           input.name = 'items'
           input.value = `${indexed[idItem].sucursal}`
+      //     input.classList.add('appearance-none','rounded-full', 'border-2', 'border-solid' )
           input.setAttribute(`data-id`, `${idItem}`)
     const span  =  document.createElement('span')
           span.classList.add('pl-8','txt-disactive-gray', 'text-sm', 'place-self-stretch')
@@ -46,6 +47,7 @@ const addItem = (id) => {
 
 //click event function of deliver btn
 export const deliverList = () => {
+      
     // showing deliver modal
     deliverModal.classList.remove('hidden')
     deliverModal.classList.add('flex')
@@ -64,33 +66,39 @@ export const deliverList = () => {
     const callBtn = document.createElement('a')
       // TODO, obtener el telefono del valor del radiobtn checkeado y ponerlo como href
           callBtn.setAttribute('name', 'call-btn')
-    // btn innerHTML is setting en styles.css, because mediaquery
-        //   callBtn.innerHTML = 'Llamar'
+          callBtn.innerHTML = 'Llamar'
           callBtn.classList.add('call-btn', 'txt-m-white', 'btn', 'w-28', 'min-w-max')
     const cancelBtn = document.createElement('button')
           cancelBtn.setAttribute('name', 'cancel')
           cancelBtn.innerHTML = 'Cancelar'
-          cancelBtn.classList.add('btn', 'w-28', 'min-w-max',  'opacity-70')
+          cancelBtn.classList.add('btn', 'w-28', 'min-w-max',  'cancel')
           
     fieldset.append(divLegend)
     divLegend.append(legend)
-    // setting 'addItem' as parameter of 'numberlistrender' to iterate it
-    // fieldset.append(divLabel)
+
+
+
     numberListRender(addItem)
     fieldset.append(div)
     div.append(cancelBtn, callBtn)
 
-//     const inputRadio = document.querySelectorAll('input[type="radio"]')
-//     console.log(inputRadio)
+    const inputRadio = document.querySelectorAll('input[type="radio"]')
+    const element = [...inputRadio]
 
-    
-    callBtn.addEventListener('click', async(e) => {
-      //   e.preventDefault()
-        const { checked } = await import('./radioBtn.js')
-        checked(e)
-    })
-    // callBtn.removeEventListener('click', checked, true)e
 
     radioBtn()
+    const check = checked()
+    const item = check
+    console.log(item)
+    callBtn.setAttribute(`href`, `tel:${item}`)
+
+    element.forEach(item => item.addEventListener('change', (e) =>{
+      const id = e.target.dataset.id
+      // console.log(id)
+      const tel = indexed[id].telefono
+      callBtn.setAttribute(`href`, `tel:${tel}`)
+
+  }))
+
 }
 

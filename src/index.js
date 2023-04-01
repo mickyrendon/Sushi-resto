@@ -19,15 +19,15 @@ mobileMenuBtn.addEventListener('click', async () => {
 })
 
 
-const deliverBtn = document.querySelector('.deliver-btn')
+const deliverBtn = [document.querySelector('.deliver-btn'),document.querySelector('.deliver-btn-main') ]
 
-deliverBtn.addEventListener('click', async () => {
+deliverBtn.forEach(btn => btn.addEventListener('click', async () => {
     const { deliverList } = await import('./js/deliverList/deliverListNode.js')
     // e.preventDefault()
 
     return deliverList()
 })
-
+)
 
 globalThis.addEventListener('load', () => {
     return deleteLoader() 
