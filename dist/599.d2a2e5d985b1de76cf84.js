@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkokasama2=self.webpackChunkokasama2||[]).push([[599],{599:(e,a,o)=>{o.r(a),o.d(a,{back:()=>n});var l=o(785),n=function(){var e=document.querySelector(".gallery-modal"),a=document.body;e.childElementCount>0&&(a.style.overflow="auto",e.classList.add("hidden"),e.style.display="none",(0,l.Z)(e.childNodes).forEach((function(e){return e.remove()})))}}}]);

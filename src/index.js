@@ -2,8 +2,8 @@ import { deleteLoader } from '../src/js/loader/loader.js'
 import { cardsIterator } from '../src/js/gallery/cards/createCard.js'
 import { mediaQ } from '../src/js/menu/desktop/mediaqueries.js'
 import { swiper } from '../src/js/slider/swiper.js'
-import './css/vars.css'
-import './css/styles.css'
+// import './css/vars.css'
+// import './css/styles.css'
 import '../node_modules/animate.css/animate.min.css'
 
 swiper
@@ -35,16 +35,7 @@ deliverBtn.addEventListener('click', async (e) => {
 })
 
 
-
-// const deliverBtn = [document.querySelector('.deliver-btn'),document.querySelector('.deliver-btn-main') ]
-// deliverBtn.forEach(btn => btn.addEventListener('click', async () => {
-//     const { deliverList } = await import('./js/deliverList/deliverListNode.js')
-//     // e.preventDefault()
-
-//     return deliverList()
-// })
-// )
-
 globalThis.addEventListener('load', () => {
+    
     return deleteLoader() 
 })
