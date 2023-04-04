@@ -4,7 +4,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : `assets/images/gallery/tinyfied/01.jpg`
+            src : `../src/assets/images/gallery/tinyfied/01.jpg`
         }
     },
     {
@@ -12,7 +12,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src: 'assets/images/gallery/tinyfied/02.jpg',
+            src: '../src/assets/images/gallery/tinyfied/02.jpg',
         }
     },
     {
@@ -20,7 +20,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/03.jpg',
+            src : '../src/assets/images/gallery/tinyfied/03.jpg',
         }
     },
     
@@ -29,7 +29,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/05.jpg',
+            src : '../src/assets/images/gallery/tinyfied/05.jpg',
         }
     },
     {
@@ -37,7 +37,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/06.jpg',
+            src : '../src/assets/images/gallery/tinyfied/06.jpg',
         }
     },
     {
@@ -45,7 +45,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/07.jpg',
+            src : '../src/assets/images/gallery/tinyfied/07.jpg',
         }
     },
     {
@@ -53,7 +53,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/08.jpg',
+            src : '../src/assets/images/gallery/tinyfied/08.jpg',
         }
     },
     {
@@ -61,7 +61,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/09.jpg',
+            src : '../src/assets/images/gallery/tinyfied/09.jpg',
         }
     },
     {
@@ -69,7 +69,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/10.jpg',
+            src : '../src/assets/images/gallery/tinyfied/10.jpg',
         }
     },
     {
@@ -77,7 +77,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/11.jpg',
+            src : '../src/assets/images/gallery/tinyfied/11.jpg',
         }
     },
     {
@@ -85,7 +85,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/12.jpg',
+            src : '../src/assets/images/gallery/tinyfied/12.jpg',
         }
     },
     {
@@ -93,7 +93,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/13.jpg',
+            src : '../src/assets/images/gallery/tinyfied/13.jpg',
         }
     },
     {
@@ -101,7 +101,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/14.jpg',
+            src : '../src/assets/images/gallery/tinyfied/14.jpg',
         }
     },
     {
@@ -109,7 +109,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/15.jpg',
+            src : '../src/assets/images/gallery/tinyfied/15.jpg',
         }
     },
     {
@@ -117,7 +117,7 @@ export const menu = [
         description: 'lorem ipsum lorem ipsum',
         price: '$00.00',
         image: {
-            src : 'assets/images/gallery/tinyfied/16.jpg',
+            src : '../src/assets/images/gallery/tinyfied/16.jpg',
         }
     }
     // {

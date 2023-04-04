@@ -2,9 +2,9 @@ import { deleteLoader } from '../src/js/loader/loader.js'
 import { cardsIterator } from '../src/js/gallery/cards/createCard.js'
 import { mediaQ } from '../src/js/menu/desktop/mediaqueries.js'
 import { swiper } from '../src/js/slider/swiper.js'
-import './css/vars.css'
-import './css/styles.css'
-import '../node_modules/animate.css/animate.min.css'
+// import "../src/css/vars.css"
+// import '../src/css/styles.css'
+// import '../node_modules/animate.css/animate.min.css'
 
 swiper
 cardsIterator
@@ -36,6 +36,6 @@ deliverBtn.addEventListener('click', async (e) => {
 
 
 globalThis.addEventListener('load', () => {
-    
+    console.log('loaded');
     return deleteLoader() 
 })
