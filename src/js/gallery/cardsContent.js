@@ -1,128 +1,132 @@
 export const menu = [
+  
     {
-        title: 'Plato 1',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : `../src/assets/images/gallery/tinyfied/01.jpg`
-        }
-    },
-    {
-        title: 'Plato 2',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src: '../src/assets/images/gallery/tinyfied/02.jpg',
-        }
-    },
-    {
-        title: 'Plato 3',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : '../src/assets/images/gallery/tinyfied/03.jpg',
-        }
-    },
-    
-    {
-        title: 'Plato 4',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : '../src/assets/images/gallery/tinyfied/05.jpg',
-        }
-    },
-    {
-        title: 'Plato 5',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : '../src/assets/images/gallery/tinyfied/06.jpg',
-        }
-    },
-    {
-        title: 'Plato 6',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : '../src/assets/images/gallery/tinyfied/07.jpg',
-        }
-    },
-    {
-        title: 'Plato 7',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : '../src/assets/images/gallery/tinyfied/08.jpg',
-        }
-    },
-    {
-        title: 'Plato 8',
-        description: 'lorem ipsum lorem ipsum',
-        price: '$00.00',
-        image: {
-            src : '../src/assets/images/gallery/tinyfied/09.jpg',
-        }
-    },
-    {
-        title: 'Plato 9',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Nigiri Ebi',
+        description: 'Delicioso bocado de arroz con salmón fresco, marinado con salsa de soja y limón. Decorado con hoja de shiso.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/10.jpg',
         }
     },
     {
-        title: 'Plato 10',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Uramaki Spicy Tuna',
+        description: 'Rollo de arroz invertido con atún picante, palta y pepino. Decorado con cebollino y semillas de sésamo.',
+        price: '$00.00',
+        image: {
+            // FIXME, falta imagen
+            src : '../src/assets/images/gallery/tinyfied/03.jpg',
+        }
+    },
+    
+    {
+        title: 'Temaki Ebi Crunchy',
+        description: 'Cono de alga nori relleno de arroz, langostinos crujientes, pepino y lechuga. Decorado con salsa teriyaki y sésamo tostado.',
+        price: '$00.00',
+        image: {
+            // FIXME, falta imagen
+            src : '../src/assets/images/gallery/tinyfied/05.jpg',
+        }
+    },
+    {
+        title: 'Gunkan Ikura',
+        description: 'Pequeñas naves de arroz coronadas con huevas de salmón y una fina tira de alga nori. Decorado con salsa ponzu y wasabi.',
+        price: '$00.00',
+        image: {
+            // FIXME, falta imagen
+            src : '../src/assets/images/gallery/tinyfied/06.jpg',
+        }
+    },
+    {
+        title: 'Futomaki',
+        description: 'Rollo grande de sushi con diversos ingredientes, como kanikama (carne de cangrejo), tortilla japonesa, pepino y shiitake. Decorado con masago (huevas de pescado volador) y sésamo blanco y negro.',
+        price: '$00.00',
+        image: {
+            src : '../src/assets/images/gallery/tinyfied/07.jpg',
+        }
+    },
+    {
+        title: 'Nigiri Sake',
+        description: 'Bocado de arroz con salmón fresco, ligeramente ahumado. Decorado con una fina tira de alga nori y wasabi.',
+        price: '$00.00',
+        image: {
+            src : '../src/assets/images/gallery/tinyfied/08.jpg',
+        }
+    },
+    {
+        title: 'Uramaki Dragon Roll',
+        description: 'Rollo invertido con langostinos tempura, palta y pepino. Decorado con una fina capa de aguacate y salsa teriyaki.',
+        price: '$00.00',
+        image: {
+            src : '../src/assets/images/gallery/tinyfied/09.jpg',
+        }
+    },
+    {
+        title: 'Temaki Kani',
+        description: 'Cono de alga nori relleno de arroz, kanikama, pepino y cebolla de verdeo. Decorado con salsa mayonesa japonesa y masago.',
+        price: '$00.00',
+        image: {
+            src: '../src/assets/images/gallery/tinyfied/02.jpg',
+        }
+    },
+    {
+        title: 'Gunkan Tako',
+        description: 'Pequeñas naves de arroz con tentáculo de pulpo cocido y una fina tira de alga nori. Decorado con salsa de soja y jengibre encurtido.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/11.jpg',
         }
     },
     {
-        title: 'Plato 11',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Maki Philadelphia',
+        description: 'Rollo de arroz relleno de salmón ahumado, queso crema y pepino. Decorado con sésamo blanco y negro.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/12.jpg',
         }
     },
     {
-        title: 'Plato 12',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Nigiri Maguro',
+        description: 'Bocado de arroz con atún fresco, cortado en finas láminas. Decorado con una fina tira de alga nori y wasabi.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/13.jpg',
         }
     },
     {
-        title: 'Plato 13',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Uramaki Rainbow Roll',
+        description: 'Rollo invertido con surimi, aguacate y pepino, coronado con láminas de salmón, atún y palta. Decorado con salsa ponzu y masago.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/14.jpg',
         }
     },
     {
-        title: 'Plato 14',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Temaki Unagi',
+        description: 'Cono de alga nori relleno de arroz, anguila a la parrilla y pepino. Decorado con salsa kabayaki y semillas de sésamo.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/15.jpg',
         }
     },
     {
-        title: 'Plato 15',
-        description: 'lorem ipsum lorem ipsum',
+        title: 'Gunkan Uni',
+        description: 'Pequeñas naves de arroz con erizo de mar fresco y una fina tira de alga nori. Decorado con una gota de salsa ponzu.',
         price: '$00.00',
         image: {
-            src : '../src/assets/images/gallery/tinyfied/16.jpg',
+            src : '../src/assets/images/gallery/tinyfied/01.jpg',
         }
-    }
+    },
+    {
+        title: 'Maki California Roll',
+        description: 'Elaborado con palta, pepino, langostinos, arroz y alga nori. Decorado con sésamo blanco y negro.',
+        price: '$00.00',
+        image: {
+            src : `../src/assets/images/gallery/tinyfied/16.jpg`
+        }
+    },
     // {
-    //     title: 'Plato 16',
-    //     description: 'lorem ipsum lorem ipsum',
+    //     title: '6',
+    //     description: '',
     //     price: '$00.00',
     //     image: {
     //         src : 'assets/images/gallery/tinyfied/17.jpg',

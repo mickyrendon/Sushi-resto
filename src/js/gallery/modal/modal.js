@@ -46,16 +46,16 @@ const createModal = (element) => {
                   swiper.classList.add('node-pic', 'swiper-slide','modal-card')
                   swiper.style.backgroundImage = element.target.style.backgroundImage
             const descCtr = document.createElement('div')        
-                  descCtr.classList.add('modal-description', 'h-1/6', 'pl-7', 'opacity-100', 'sm:pl-8')
+                  descCtr.classList.add('modal-description', 'md:h-1/6', 'pl-7', 'pb-4', 'opacity-100', 'sm:pl-8','flex', 'justify-column', 'gap-3')
             const h3 = document.createElement('h3')
-                  h3.classList = 'dish name'
+                  h3.classList = 'dish name md:text-xl'
                   h3.innerText = element.target.childNodes[0].childNodes[0].innerText
             const p = document.createElement('p')
                   p.classList = 'description'
                   p.innerText = element.target.childNodes[0].childNodes[1].innerText
                   p.classList.add('italic')
             const span = document.createElement('span')
-                  span.classList = 'price text-xs'
+                  span.classList = 'price text-sm'
                   span.innerText = element.target.childNodes[0].childNodes[2].innerText
                   
                   
