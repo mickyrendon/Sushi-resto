@@ -81,7 +81,7 @@ export const menu = [
         description: 'Rollo de arroz relleno de salmón ahumado, queso crema y pepino. Decorado con sésamo blanco y negro.',
         price: '$00.00',
         image: {
-            src : '../src/assets/images/gallery/tinyfied/12.jpg',
+            src : '',
         }
     },
     {
@@ -109,8 +109,8 @@ export const menu = [
         }
     },
     {
-        title: 'Gunkan Uni',
-        description: 'Pequeñas naves de arroz con erizo de mar fresco y una fina tira de alga nori. Decorado con una gota de salsa ponzu.',
+        title: 'Sashimi de salmón',
+        description: 'láminas finas de salmón fresco crudo con limón, que realzan su sabor natural y suavidad, y se puede sumergir en jengibre y salsa de soja para una experiencia aún más deliciosa.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/01.jpg',
