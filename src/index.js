@@ -15,7 +15,7 @@ mediaQ()
 const mobileMenuBtn = document.querySelector('.menu-mobile')
 
 mobileMenuBtn.addEventListener('click', async () => {
-    const { mobileMenu } = await import('../src/js/menu/mobile/mobileMenu.js')
+    const { mobileMenu } = await import('./js/menu/mobile/mobileMenu.js')
     return mobileMenu()
 })
 
