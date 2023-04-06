@@ -1,7 +1,7 @@
-import { deleteLoader } from '../src/js/loader/loader.js'
-import { cardsIterator } from '../src/js/gallery/cards/createCard.js'
-import { mediaQ } from '../src/js/menu/desktop/mediaqueries.js'
-import { swiper } from '../src/js/slider/swiper.js'
+import { deleteLoader } from './js/loader/loader.js'
+import { cardsIterator } from './js/gallery/cards/createCard.js'
+import { mediaQ } from './js/menu/desktop/mediaqueries.js'
+import { swiper } from './js/slider/swiper.js'
 // import "../src/css/vars.css"
 // import '../src/css/styles.css'
 // import '../node_modules/animate.css/animate.min.css'
