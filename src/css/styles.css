@@ -33,6 +33,9 @@
 .txt-disactive-gray{
     color: var(--disactive-gray)
 }
+.txt-gray{
+    color: var(--gray)
+}
 /* especials */
 .ov-hidden{
     overflow: hidden;

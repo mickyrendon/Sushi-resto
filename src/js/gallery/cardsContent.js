@@ -18,16 +18,14 @@ export const menu = [
     },
     
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Temaki Ebi Crunchy',
-        description: 'Cono de alga nori relleno de arroz, langostinos crujientes, pepino y lechuga. Decorado con salsa teriyaki y sésamo tostado.',
+        description: 'cono de nori relleno de arroz , camarón tempura, masago , palta , cebollín. Decorado con salsa teriyaki y sésamo tostado.',
         price: '$00.00',
         image: {
             src : '../src/assets/images/gallery/tinyfied/temaki_ebi.jpg',
         }
     },
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Gunkan Ikura',
         description: 'Pequeñas naves de arroz coronadas con huevas de salmón y una fina tira de alga nori. Decorado con salsa ponzu y wasabi.',
         price: '$00.00',
@@ -36,21 +34,19 @@ export const menu = [
         }
     },
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Futomaki',
         description: 'Rollo grande de sushi con diversos ingredientes, como kanikama (carne de cangrejo), tortilla japonesa, pepino y shiitake. Decorado con masago (huevas de pescado volador) y sésamo blanco y negro.',
         price: '$00.00',
         image: {
-            src : '../src/assets/images/gallery/tinyfied/futomaki.png',
+            src : '../src/assets/images/gallery/tinyfied/futomaki.jpeg',
         }
     },
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Nigiri Sake',
         description: 'Bocado de arroz con salmón fresco, ligeramente ahumado. Decorado con una fina tira de alga nori y wasabi.',
         price: '$00.00',
         image: {
-            src : '../src/assets/images/gallery/tinyfied/08.jpg',
+            src : '../src/assets/images/gallery/tinyfied/nigiri_sake.jpg',
         }
     },
     {
@@ -62,7 +58,6 @@ export const menu = [
         }
     },
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Temaki Kani',
         description: 'Cono de alga nori relleno de arroz, kanikama, pepino y cebolla de verdeo. Decorado con salsa mayonesa japonesa y masago.',
         price: '$00.00',
@@ -79,12 +74,11 @@ export const menu = [
         }
     },
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Maki Philadelphia',
         description: 'Rollo de arroz relleno de salmón ahumado, queso crema y pepino. Decorado con sésamo blanco y negro.',
         price: '$00.00',
         image: {
-            src : '../src/assets/images/gallery/tinyfied/16.jpg',
+            src : '../src/assets/images/gallery/tinyfied/philadelphia-roll.jpg',
         }
     },
     {
@@ -96,7 +90,6 @@ export const menu = [
         }
     },
     {
-        // FIXME, cambiar por una foto adecuada a las demás
         title: 'Uramaki Rainbow Roll',
         description: 'Rollo invertido con surimi, aguacate y pepino, coronado con láminas de salmón, atún y palta. Decorado con salsa ponzu y masago.',
         price: '$00.00',

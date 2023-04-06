@@ -43,17 +43,17 @@ const createModal = (element) => {
                   swiper.setAttribute('title', 'modal-pic')
                   swiper.setAttribute('data-id', arrayIndex)
                   swiper.id = `modal_${element.target.id}`
-                  swiper.classList.add('node-pic', 'swiper-slide','modal-card')
+                  swiper.classList.add('node-pic', 'swiper-slide','modal-card', 'bg-contain')
                   swiper.style.backgroundImage = element.target.style.backgroundImage
             const descCtr = document.createElement('div')        
-                  descCtr.classList.add('modal-description', 'md:h-1/6', 'pl-7', 'pb-4', 'opacity-100', 'sm:pl-8','flex', 'justify-column', 'gap-3')
+                  descCtr.classList.add('modal-description', 'h-auto', 'p-5', 'opacity-100', 'sm:pl-8','flex', 'justify-column', 'gap-3')
             const h3 = document.createElement('h3')
                   h3.classList = 'dish name md:text-xl'
                   h3.innerText = element.target.childNodes[0].childNodes[0].innerText
             const p = document.createElement('p')
-                  p.classList = 'description'
+                  p.classList.add('description', 'md:max-w-lg')
                   p.innerText = element.target.childNodes[0].childNodes[1].innerText
-                  p.classList.add('italic')
+                  p.classList.add('font-extralight', 'txt-gray')
             const span = document.createElement('span')
                   span.classList = 'price text-sm'
                   span.innerText = element.target.childNodes[0].childNodes[2].innerText
