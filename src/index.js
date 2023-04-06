@@ -5,7 +5,8 @@ import { swiper } from '../src/js/slider/swiper.js'
 // import "../src/css/vars.css"
 // import '../src/css/styles.css'
 // import '../node_modules/animate.css/animate.min.css'
-
+// import '../node_modules/animate.css'
+// Copy and paste me to your console
 swiper
 cardsIterator
 // desktop menu
@@ -36,6 +37,5 @@ deliverBtn.addEventListener('click', async (e) => {
 
 
 globalThis.addEventListener('load', () => {
-    console.log('loaded');
     return deleteLoader() 
 })
