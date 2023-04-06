@@ -30,7 +30,7 @@ export const menu = [
         description: 'Pequeñas naves de arroz coronadas con huevas de salmón y una fina tira de alga nori. Decorado con salsa ponzu y wasabi.',
         price: '$00.00',
         image: {
-            src : '../src/assets/images/gallery/tinyfied/gunkan.jpg',
+            src : './assets/images/gallery/tinyfied/gunkan.jpg',
         }
     },
     {
