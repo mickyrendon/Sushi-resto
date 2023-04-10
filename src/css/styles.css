@@ -150,7 +150,7 @@ form > [type='submit']{
 } */
 /* cards */
 .card{
-    width:  11rem;
+    /* width:  11rem; */
     height: 11rem;
     display: flex;
     align-items: end;
