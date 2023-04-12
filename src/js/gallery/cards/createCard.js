@@ -1,5 +1,6 @@
 import { indexed } from '../cardsContentReduced.js'
 import { cardRender } from '../renderIterator.js'
+import { galleryPicsCreator } from '../modal/modal.js'
 
 const nodeCard = document.querySelector('.gallery')
 // variable incrementadora para agregar un id element cada elemento para cuando se necesite
@@ -8,6 +9,7 @@ const createCard = (menuId) => {
     const cardCtr = document.createElement('div')
           cardCtr.setAttribute('title', 'menu-card')
           cardCtr.setAttribute('data-id', menuId)
+          cardCtr.setAttribute('role', 'button')
           cardCtr.id = `card_${idx++}`
           cardCtr.classList = `${indexed[menuId].title} card bg-cover bg-center`
           cardCtr.style.backgroundImage = `url(${indexed[menuId].image.src})`
@@ -59,7 +61,7 @@ nodeCard.addEventListener('click', async (ev) => {
       ev.stopImmediatePropagation()
 
       if(cardName === 'menu-card' || cardName === 'card-description' || cardName === 'dish-name' || cardName === 'price'){
-            const { galleryPicsCreator } = await import('../modal/modal.js')
+            // const { galleryPicsCreator } = await import('../modal/modal.js')
             // obtengo el elemento clickeado
             ev.preventDefault()
             return galleryPicsCreator(ev)
