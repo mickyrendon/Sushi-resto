@@ -63,15 +63,17 @@ export const deliverList = () => {
           div.classList.add('mt-12', 'flex', 'justify-end', 'gap-2')
     const callBtn = document.createElement('a')
           callBtn.setAttribute('name', 'call-btn')
+          callBtn.setAttribute('role','button')
           callBtn.innerHTML = 'Llamar'
           callBtn.classList.add('call-btn', 'txt-m-white', 'btn', 'w-28', 'min-w-max')
     const cancelBtn = document.createElement('button')
           cancelBtn.setAttribute('name', 'cancel')
+          cancelBtn.type = 'button'
           cancelBtn.innerHTML = 'Cancelar'
           cancelBtn.classList.add('btn', 'w-28', 'min-w-max',  'cancel')
           
     fieldset.append(divLegend)
-    divLegend.append(legend)
+    divLegend.append(legend) 
 
 
 
@@ -99,3 +101,5 @@ export const deliverList = () => {
 
 }
 
+
+// evitar el evento click de un boton
