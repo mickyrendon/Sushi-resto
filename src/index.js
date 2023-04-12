@@ -21,14 +21,14 @@ const mobileMenuBtn = document.querySelector('.menu-mobile')
 
 const deliverBtnNav = document.querySelector('.nav-bar')
 
-      deliverBtnNav.addEventListener('click', async (e) => {
-        if(e.target.title === 'deliver-btn-nav'){
-            console.log('navbarr')
-            e.stopImmediatePropagation()
-            return deliverList()
-        }
-        
-    })
+deliverBtnNav.addEventListener('click', async (e) => {
+    if(e.target.title === 'deliver-btn-nav'){
+        console.log('navbarr')
+        e.stopImmediatePropagation()
+        return deliverList()
+    }
+                                            
+})
 deliverBtnNav.addEventListener("keydown", function(event) {
     if (event.key === "Enter" || event.key === " ") {
     event.preventDefault();

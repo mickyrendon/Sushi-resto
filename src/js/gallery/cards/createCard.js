@@ -56,10 +56,13 @@ export const cardsIterator =  cardRender(addImg)
 nodeCard.addEventListener('click', async (ev) => {
       // console.log(ev.target);
       const cardName = ev.target.title
+      ev.stopImmediatePropagation()
 
       if(cardName === 'menu-card' || cardName === 'card-description' || cardName === 'dish-name' || cardName === 'price'){
             const { galleryPicsCreator } = await import('../modal/modal.js')
             // obtengo el elemento clickeado
+            ev.preventDefault()
             return galleryPicsCreator(ev)
       }
+      ev.preventDefault()
 })
