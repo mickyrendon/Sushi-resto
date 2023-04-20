@@ -11,6 +11,11 @@ import { deliverList } from './js/deliverList/deliverListNode.js'
 // Copy and paste me to your console
 swiper
 cardsIterator
+globalThis.addEventListener('popstate', function(event) {
+    // Hacer algo aquí cuando se detecta el evento "back"
+    console.log(`se ha detectado el evento back ${event.target}`)
+})
+  
 // desktop menu
 mediaQ()
 // menu mobile

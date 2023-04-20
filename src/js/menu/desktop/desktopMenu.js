@@ -30,7 +30,8 @@ const node = () => {
       const li3 = document.createElement('li')
 
       const a1 = document.createElement('a')
-            a1.href = 'https://www.facebook.com/OkasamaSushiLaSerena'
+            // a1.href = 'https://www.facebook.com/OkasamaSushiLaSerena'
+            a1.href = 'https://www.facebook.com/'
             a1.innerHTML = `
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   class="w-7 icon-netw "
@@ -49,7 +50,8 @@ const node = () => {
             `
       const a3 = document.createElement('a')
             a3.classList = 'link-h'
-            a3.href = 'https://twitter.com/okasamasushi1'
+            // a3.href = 'https://twitter.com/okasamasushi1'
+            a3.href = 'https://twitter.com/'
             a3.innerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             class=" w-7 icon-netw"
